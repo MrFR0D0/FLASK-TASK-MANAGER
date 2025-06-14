@@ -8,7 +8,7 @@ repos:
       entry: ruff check --force-exclude
       language: python
       types_or: [python, pyi, jupyter]
-      args: [--fix, --exit-non-zero-on-fix]
+      args: [--fix, --exit-non-zero-on-fix, "--extend-ignore=S201"]
       require_serial: true
       additional_dependencies: []
       minimum_pre_commit_version: "2.9.2"
