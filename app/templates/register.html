@@ -9,5 +9,5 @@
   <div class="mb-3">{{ form.confirm.label }}{{ form.confirm(class_="form-control") }}</div>
   {{ form.submit(class_="btn btn-success") }}
 </form>
-<p class="mt-2">Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+<p class="mt-2">Already have an account? <a href="{{ url_for('auth.login') }}">Login</a></p>
 {% endblock %}
