@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 {% block title %}My Tasks{% endblock %}
 {% block content %}
-<h2>My Tasks</h2>
+<h2>Мои задачи</h2>
 <form method="POST" action="{{ url_for('main.add') }}" class="mb-3">
   <div class="input-group">
-    <input type="text" name="title" class="form-control" placeholder="New Task" required>
-    <button class="btn btn-primary" type="submit">Add</button>
+    <input type="text" name="title" class="form-control" placeholder="Новая задача" required>
+    <button class="btn btn-primary" type="submit">Добавить</button>
   </div>
 </form>
 <ul class="list-group">
   {% for task in tasks %}
     <li class="list-group-item">{{ task.title }}</li>
   {% else %}
-    <li class="list-group-item">No tasks yet.</li>
+    <li class="list-group-item">Еще нет добавленных задач.</li>
   {% endfor %}
 </ul>
 {% endblock %}
